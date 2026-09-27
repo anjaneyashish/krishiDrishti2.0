@@ -299,6 +299,20 @@ function RouteContent() {
         return <PlaceholderModulePage type="tasks" />;
       case '/farm-services':
         return <PlaceholderModulePage type="farm-services" />;
+      case '/government-schemes':
+        return (
+          <ComingSoonPage
+            moduleName="Government Schemes"
+            iconType="crop"
+            description="PM-Kisan, PM Fasal Bima Yojana (PMFBY), Soil Health Card, and agricultural subsidies & Direct Benefit Transfer (DBT)."
+            plannedFeatures={[
+              'PM-Kisan 17th installment disbursement status and e-KYC updates',
+              'PMFBY crop insurance enrollment, premium calculator & claim filing',
+              'Custom hiring center & farm machinery subsidy applications',
+              'Direct benefit transfer (DBT) verification and Aadhaar linking',
+            ]}
+          />
+        );
       case '/service-provider/dashboard':
         return <ServiceProviderDashboardPage />;
       case '/buyer/dashboard':

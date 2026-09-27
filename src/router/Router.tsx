@@ -32,6 +32,7 @@ export type AppRoute =
   | '/market'
   | '/tasks'
   | '/farm-services'
+  | '/government-schemes'
   | '/farmer/crops'
   | '/design-system'
   | '/';
@@ -55,6 +56,7 @@ export const ALL_ROUTES: { path: AppRoute; label: string; group: 'Onboarding' | 
   { path: '/market-intelligence', label: 'Market Intelligence (Coming Soon)', group: 'Dashboards' },
   { path: '/ai-assistant', label: 'AI Assistant (Coming Soon)', group: 'Dashboards' },
   { path: '/farmer/calendar', label: 'Farmer Calendar', group: 'Dashboards' },
+  { path: '/government-schemes', label: 'Government Schemes (Coming Soon)', group: 'Dashboards' },
   { path: '/service-provider/dashboard', label: 'Service Provider Dashboard', group: 'Dashboards' },
   { path: '/buyer/dashboard', label: 'Buyer Dashboard', group: 'Dashboards' },
   { path: '/admin/dashboard', label: 'Admin Dashboard', group: 'Dashboards' },
