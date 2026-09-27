@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix KrishiDrishti - Agricultural Technology Ecosystem",
+  "description": "Foundation and Design System for KrishiDrishti, an accessible, farmer-friendly agricultural digital public infrastructure platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

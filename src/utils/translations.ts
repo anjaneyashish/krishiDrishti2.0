@@ -1,0 +1,273 @@
+/**
+ * KrishiDrishti Multilingual Foundation
+ * Module 1: Project Foundation & Design System
+ * 
+ * Supports English (en), Hindi (hi - हिन्दी), and Odia (or - ଓଡ଼ିଆ)
+ */
+
+import { SupportedLanguage, LanguageOption, AccountTypeOption } from '../types';
+
+export const SUPPORTED_LANGUAGES: LanguageOption[] = [
+  {
+    code: 'en',
+    name: 'English',
+    nativeName: 'English',
+    scriptName: 'Default / Universal',
+  },
+  {
+    code: 'hi',
+    name: 'Hindi',
+    nativeName: 'हिन्दी',
+    scriptName: 'देवनागरी (Devanagari)',
+  },
+  {
+    code: 'or',
+    name: 'Odia',
+    nativeName: 'ଓଡ଼ିଆ',
+    scriptName: 'ଓଡ଼ିଆ ଲିପି (Odia Script)',
+  },
+];
+
+export const ACCOUNT_TYPE_OPTIONS: AccountTypeOption[] = [
+  {
+    id: 'farmer',
+    titleKey: 'farmerTitle',
+    defaultTitle: 'Farmer / Producer',
+    defaultDescription: 'Register farm details, soil profile, access advisories, and connect with agro services.',
+    badge: 'Primary Producer',
+    iconName: 'Sprout',
+  },
+  {
+    id: 'service_provider',
+    titleKey: 'serviceProviderTitle',
+    defaultTitle: 'Agri Service Provider',
+    defaultDescription: 'List tractors, drones, cold storage, harvesting machinery, and agronomy services.',
+    badge: 'Equipment & Services',
+    iconName: 'Tractor',
+  },
+  {
+    id: 'buyer',
+    titleKey: 'buyerTitle',
+    defaultTitle: 'Buyer / FPO / Trader',
+    defaultDescription: 'Procure verified produce, connect with farmer groups, and manage supply chains.',
+    badge: 'Market & Trade',
+    iconName: 'Store',
+  },
+  {
+    id: 'admin',
+    titleKey: 'adminTitle',
+    defaultTitle: 'Nodal Administrator',
+    defaultDescription: 'Department of Agriculture officials, district coordinators, and verification authority.',
+    badge: 'Official / Governance',
+    iconName: 'Shield',
+  },
+];
+
+export const translations = {
+  en: {
+    appTitle: 'KrishiDrishti',
+    appSubtitle: 'Agricultural Digital Public Infrastructure',
+    tagline: 'Empowering Farmers, Service Providers, and Buyers with Unified Agricultural Intelligence',
+    chooseLanguage: 'Select Your Preferred Language',
+    chooseLanguageSubtitle: 'Choose the language you are most comfortable using. You can change this at any time.',
+    continueButton: 'Continue',
+    backButton: 'Back',
+    skipButton: 'Skip for now',
+    saveAndContinue: 'Save & Continue',
+    completeProfile: 'Complete Farmer Profile',
+    selectAccountType: 'Select Your Role in the Agri Ecosystem',
+    selectAccountTypeSubtitle: 'This will configure your specialized workspace, permissions, and available services.',
+    registerTitle: 'Create KrishiDrishti Account',
+    registerSubtitle: 'Enter your basic contact details to establish your unified digital farming identity.',
+    adminLoginTitle: 'Nodal Administrator Portal',
+    adminLoginSubtitle: 'Secure administrative access for agriculture department coordinators and monitors.',
+    
+    // Address labels
+    addressSectionTitle: 'Address Details',
+    addressSectionSubtitle: 'Location of your primary farm holding and residence.',
+    completeAddressLabel: 'Complete Address (House / Plot / Street)',
+    completeAddressPlaceholder: 'e.g. Plot No. 42, Near Primary School',
+    blockTehsilLabel: 'Block / Tehsil',
+    blockTehsilPlaceholder: 'e.g. Pipili / Nimapara',
+    villageTownLabel: 'Village / Town',
+    villageTownPlaceholder: 'e.g. Balanga / Dandamukundapur',
+    pinCodeLabel: 'PIN Code',
+    pinCodePlaceholder: '6-digit postal code (e.g. 752001)',
+
+    // Farm details
+    farmSectionTitle: 'Farm Information',
+    farmSectionSubtitle: 'Specify total operational landholding and measurement units.',
+    totalLandAreaLabel: 'Total Land Area',
+    totalLandAreaPlaceholder: 'e.g. 4.5',
+    landAreaUnitLabel: 'Land Area Unit',
+    otherUnitPlaceholder: 'Specify measurement unit (e.g. Guntha, Biswa)',
+
+    // Soil details
+    soilSectionTitle: 'Soil Information',
+    soilSectionSubtitle: 'Select the primary soil classification present on your farmland.',
+    soilTypeLabel: 'Soil Type',
+    otherSoilPlaceholder: 'Specify soil type',
+
+    fullNameLabel: 'Full Legal Name',
+    phoneLabel: 'Mobile Number',
+    phonePlaceholder: '10-digit mobile number',
+    emailLabel: 'Email Address (Optional)',
+    stateLabel: 'State / Union Territory',
+    districtLabel: 'District',
+    kisanCardLabel: 'Kisan Credit Card / Farmer ID (Optional)',
+    serviceCategoryLabel: 'Primary Service Domain',
+    serviceRadiusLabel: 'Operating Radius (in Kilometers)',
+    equipmentLabel: 'Registered Farm Equipment',
+    orgNameLabel: 'Organization / Firm Name',
+    businessTypeLabel: 'Business Category',
+    procurementCropsLabel: 'Target Procurement Produce',
+    adminUsernameLabel: 'Government Officer ID',
+    adminPasswordLabel: 'Security Password',
+    adminLoginAction: 'Sign in to Admin Console',
+    dashboardBadge: 'Module 1 Foundation',
+    dashboardStatusNotice: 'Future Module Placeholder: Workspace will be populated in subsequent development stages.',
+    viewDesignSystem: 'Design System & Component Showcase',
+    testRoutes: 'Explore System Routes',
+    resetData: 'Clear Local State',
+    feedbackSuccess: 'Saved to local storage successfully',
+  },
+  hi: {
+    appTitle: 'कृषिदृष्टि',
+    appSubtitle: 'कृषि डिजिटल सार्वजनिक अवसंरचना',
+    tagline: 'एकीकृत कृषि बुद्धिमत्ता के साथ किसानों, सेवा प्रदाताओं और खरीदारों का सशक्तिकरण',
+    chooseLanguage: 'अपनी पसंदीदा भाषा चुनें',
+    chooseLanguageSubtitle: 'वह भाषा चुनें जिसमें आप सबसे अधिक सहज हैं। आप इसे कभी भी बदल सकते हैं।',
+    continueButton: 'आगे बढ़ें',
+    backButton: 'पीछे जाएं',
+    skipButton: 'अभी छोड़ें',
+    saveAndContinue: 'सुरक्षित करें और आगे बढ़ें',
+    completeProfile: 'किसान प्रोफ़ाइल पूर्ण करें',
+    selectAccountType: 'कृषि पारिस्थितिकी तंत्र में अपनी भूमिका चुनें',
+    selectAccountTypeSubtitle: 'यह आपके विशेष कार्यक्षेत्र, अनुमतियों और उपलब्ध सेवाओं को व्यवस्थित करेगा।',
+    registerTitle: 'कृषिदृष्टि खाता बनाएं',
+    registerSubtitle: 'अपनी एकीकृत डिजिटल कृषि पहचान स्थापित करने के लिए संपर्क विवरण दर्ज करें।',
+    adminLoginTitle: 'नोडल प्रशासनिक पोर्टल',
+    adminLoginSubtitle: 'कृषि विभाग के समन्वयकों और पर्यवेक्षकों के लिए सुरक्षित प्रशासनिक प्रवेश।',
+    
+    // Address labels
+    addressSectionTitle: 'पते का विवरण',
+    addressSectionSubtitle: 'आपके प्राथमिक खेत एवं निवास का भौगोलिक पता।',
+    completeAddressLabel: 'पूरा पता (मकान / प्लॉट / मार्ग)',
+    completeAddressPlaceholder: 'उदा. प्लॉट नं. 42, प्राथमिक विद्यालय के पास',
+    blockTehsilLabel: 'प्रखंड / तहसील (Block / Tehsil)',
+    blockTehsilPlaceholder: 'उदा. पिपिली / निमापड़ा',
+    villageTownLabel: 'गाँव / कस्बा',
+    villageTownPlaceholder: 'उदा. बालंगा',
+    pinCodeLabel: 'पिन कोड',
+    pinCodePlaceholder: '6 अंकों का पिन कोड (उदा. 752001)',
+
+    // Farm details
+    farmSectionTitle: 'खेत की जानकारी',
+    farmSectionSubtitle: 'अपनी कुल परिचालन योग्य कृषि भूमि एवं मापन इकाई दर्ज करें।',
+    totalLandAreaLabel: 'कुल भूमि क्षेत्र (Total Land Area)',
+    totalLandAreaPlaceholder: 'उदा. 4.5',
+    landAreaUnitLabel: 'भूमि मापन इकाई',
+    otherUnitPlaceholder: 'इकाई का नाम दर्ज करें (उदा. गुंठा, बिस्वा)',
+
+    // Soil details
+    soilSectionTitle: 'मृदा / मिट्टी की जानकारी',
+    soilSectionSubtitle: 'अपने खेत की मुख्य मिट्टी का प्रकार चुनें।',
+    soilTypeLabel: 'मिट्टी का प्रकार (Soil Type)',
+    otherSoilPlaceholder: 'मिट्टी का प्रकार दर्ज करें',
+
+    fullNameLabel: 'पूरा कानूनी नाम',
+    phoneLabel: 'मोबाइल नंबर',
+    phonePlaceholder: '10 अंकों का मोबाइल नंबर',
+    emailLabel: 'ईमेल पता (वैकल्पिक)',
+    stateLabel: 'राज्य / केंद्र शासित प्रदेश',
+    districtLabel: 'ज़िला',
+    kisanCardLabel: 'किसान क्रेडिट कार्ड / किसान आईडी (वैकल्पिक)',
+    serviceCategoryLabel: 'प्राथमिक सेवा क्षेत्र',
+    serviceRadiusLabel: 'कार्य क्षेत्र का दायरा (किमी में)',
+    equipmentLabel: 'पंजीकृत कृषि उपकरण',
+    orgNameLabel: 'संस्था या फर्म का नाम',
+    businessTypeLabel: 'व्यापार श्रेणी',
+    procurementCropsLabel: 'लक्षित खरीद की फसलें',
+    adminUsernameLabel: 'सरकारी अधिकारी पहचान संख्या (Officer ID)',
+    adminPasswordLabel: 'सुरक्षा पासवर्ड',
+    adminLoginAction: 'प्रशासनिक कंसोल में प्रवेश करें',
+    dashboardBadge: 'मॉड्यूल 1 आधारशिला',
+    dashboardStatusNotice: 'भावी मॉड्यूल प्लेसहोल्डर: आगामी विकास चरणों में इस कार्यक्षेत्र को सक्रिय किया जाएगा।',
+    viewDesignSystem: 'डिज़ाइन प्रणाली एवं घटक प्रदर्शनी',
+    testRoutes: 'सिस्टम रूट्स देखें',
+    resetData: 'लोकल डेटा रीसेट करें',
+    feedbackSuccess: 'लोकल स्टोरेज में सफलतापूर्वक सुरक्षित किया गया',
+  },
+  or: {
+    appTitle: 'କୃଷିଦୃଷ୍ଟି',
+    appSubtitle: 'କୃଷି ଡିଜିଟାଲ୍ ସାର୍ବଜନୀନ ଭିତ୍ତିଭୂମି',
+    tagline: 'ସମନ୍ୱିତ କୃଷି ଜ୍ଞାନ ସହିତ କୃଷକ, ସେବା ପ୍ରଦାନକାରୀ ଓ ବ୍ୟବସାୟୀଙ୍କ ସଶକ୍ତୀକରଣ',
+    chooseLanguage: 'ଆପଣଙ୍କର ପସନ୍ଦର ଭାଷା ବାଛନ୍ତୁ',
+    chooseLanguageSubtitle: 'ଯେଉଁ ଭାଷାରେ ଆପଣ ସହଜ ଅନୁଭବ କରନ୍ତି ତାହା ଚୟନ କରନ୍ତୁ। ଏହା ପରେ ମଧ୍ୟ ପରିବର୍ତ୍ତନ ହୋଇପାରିବ।',
+    continueButton: 'ଆଗକୁ ବଢ଼ନ୍ତୁ',
+    backButton: 'ପଛକୁ ଫେରନ୍ତୁ',
+    skipButton: 'ବର୍ତ୍ତମାନ ଛାଡ଼ନ୍ତୁ',
+    saveAndContinue: 'ସଂରକ୍ଷଣ କରି ଆଗକୁ ଯାଆନ୍ତୁ',
+    completeProfile: 'କୃଷକ ପ୍ରୋଫାଇଲ୍ ସମ୍ପୂର୍ଣ୍ଣ କରନ୍ତୁ',
+    selectAccountType: 'କୃଷି କ୍ଷେତ୍ରରେ ଆପଣଙ୍କ ଭୂମିକା ଚୟନ କରନ୍ତୁ',
+    selectAccountTypeSubtitle: 'ଏହା ଆପଣଙ୍କ କାର୍ଯ୍ୟସ୍ଥଳୀ, ସୁବିଧା ଓ ଉପଲବ୍ଧ ସେବା ନିର୍ଦ୍ଧାରଣ କରିବ।',
+    registerTitle: 'କୃଷିଦୃଷ୍ଟି ଖାତା ଖୋଲନ୍ତୁ',
+    registerSubtitle: 'ଆପଣଙ୍କ ଡିଜିଟାଲ୍ କୃଷି ପରିଚୟପତ୍ର ସୃଷ୍ଟି କରିବା ପାଇଁ ବିବରଣୀ ପ୍ରଦାନ କରନ୍ତୁ।',
+    adminLoginTitle: 'ନୋଡାଲ୍ ପ୍ରଶାସକ ପୋର୍ଟାଲ୍',
+    adminLoginSubtitle: 'କୃଷି ବିଭାଗ ଅଧିକାରୀ ଓ ନିରୀକ୍ଷକଙ୍କ ପାଇଁ ସୁରକ୍ଷିତ ପ୍ରବେଶ।',
+    
+    // Address labels
+    addressSectionTitle: 'ଠିକଣା ବିବରଣୀ',
+    addressSectionSubtitle: 'ଆପଣଙ୍କ ଚାଷ ଜମି ଏବଂ ବାସସ୍ଥାନର ଠିକଣା।',
+    completeAddressLabel: 'ସମ୍ପୂର୍ଣ୍ଣ ଠିକଣା (ଘର / ପ୍ଲଟ୍ / ରାସ୍ତା)',
+    completeAddressPlaceholder: 'ଯଥା: ପ୍ଲଟ୍ ନଂ ୪୨, ପ୍ରାଥମିକ ବିଦ୍ୟାଳୟ ନିକଟ',
+    blockTehsilLabel: 'ବ୍ଲକ୍ / ତହସିଲ',
+    blockTehsilPlaceholder: 'ଯଥା: ପିପିଲି / ନିମାପଡ଼ା',
+    villageTownLabel: 'ଗ୍ରାମ / ସହର',
+    villageTownPlaceholder: 'ଯଥା: ବାଲାଙ୍ଗା',
+    pinCodeLabel: 'ପିନ୍ କୋଡ୍',
+    pinCodePlaceholder: '୬ ଅଙ୍କ ବିଶିଷ୍ଟ ପିନ୍ କୋଡ୍ (ଯଥା: ୭୫୨୦୦୧)',
+
+    // Farm details
+    farmSectionTitle: 'ଜମି ବିବରଣୀ',
+    farmSectionSubtitle: 'ଆପଣଙ୍କ ମୋଟ ଚାଷ ଜମି ଏବଂ ମାପ ଏକକ ନିର୍ଦ୍ଧାରଣ କରନ୍ତୁ।',
+    totalLandAreaLabel: 'ମୋଟ ଚାଷ ଜମି ପରିମାଣ (Total Land Area)',
+    totalLandAreaPlaceholder: 'ଯଥା: ୪.୫',
+    landAreaUnitLabel: 'ଜମି ମାପ ଏକକ',
+    otherUnitPlaceholder: 'ମାପ ଏକକ ଉଲ୍ଲେଖ କରନ୍ତୁ (ଯଥା: ଗୁଣ୍ଠ, ମାଣ)',
+
+    // Soil details
+    soilSectionTitle: 'ମୃତ୍ତିକା / ମାଟିର ବିବରଣୀ',
+    soilSectionSubtitle: 'ଆପଣଙ୍କ ଚାଷ ଜମିର ମୁଖ୍ୟ ମାଟିର ପ୍ରକାର ବାଛନ୍ତୁ।',
+    soilTypeLabel: 'ମାଟିର ପ୍ରକାର (Soil Type)',
+    otherSoilPlaceholder: 'ଅନ୍ୟ ମାଟି ପ୍ରକାର ଉଲ୍ଲେଖ କରନ୍ତୁ',
+
+    fullNameLabel: 'ସମ୍ପୂର୍ଣ୍ଣ ଆଇନଗତ ନାମ',
+    phoneLabel: 'ମୋବାଇଲ୍ ନମ୍ବର',
+    phonePlaceholder: '୧୦ ଅଙ୍କ ବିଶିଷ୍ଟ ମୋବାଇଲ୍ ନମ୍ବର',
+    emailLabel: 'ଇମେଲ୍ ଠିକଣା (ଇଚ୍ଛାଧୀନ)',
+    stateLabel: 'ରାଜ୍ୟ',
+    districtLabel: 'ଜିଲ୍ଲା',
+    kisanCardLabel: 'କିଷାନ କ୍ରେଡିଟ୍ କାର୍ଡ / କୃଷକ ଆଇଡି (ଇଚ୍ଛାଧୀନ)',
+    serviceCategoryLabel: 'ସେବା ବର୍ଗ',
+    serviceRadiusLabel: 'କାର୍ଯ୍ୟ କ୍ଷେତ୍ର (କି.ମି.)',
+    equipmentLabel: 'ପଞ୍ଜୀକୃତ କୃଷି ଯନ୍ତ୍ରପାତି',
+    orgNameLabel: 'ସଂସ୍ଥା ବା ବ୍ୟବସାୟର ନାମ',
+    businessTypeLabel: 'ବ୍ୟବସାୟ ଶ୍ରେଣୀ',
+    procurementCropsLabel: 'କ୍ରୟ ଉଦ୍ଦେଶ୍ୟ ଫସଲ',
+    adminUsernameLabel: 'ଅଧିକାରୀ ଆଇଡି (Officer ID)',
+    adminPasswordLabel: 'ପାସୱାର୍ଡ',
+    adminLoginAction: 'ଲଗ୍ ଇନ୍ କରନ୍ତୁ',
+    dashboardBadge: 'ମଡ୍ୟୁଲ୍ ୧ ଭିତ୍ତିଭୂମି',
+    dashboardStatusNotice: 'ଭବିଷ୍ୟତ ମଡ୍ୟୁଲ୍ ସୂଚକ: ଆଗାମୀ ବିକାଶ ପର୍ଯ୍ୟାୟରେ ଏହି ଡ୍ୟାସବୋର୍ଡ ସକ୍ରିୟ ହେବ।',
+    viewDesignSystem: 'ଡିଜାଇନ୍ ସିଷ୍ଟମ୍ ପରିଦର୍ଶନ',
+    testRoutes: 'ସମସ୍ତ ରୁଟ୍ ପରୀକ୍ଷା',
+    resetData: 'ଡାଟା ରିସେଟ୍ କରନ୍ତୁ',
+    feedbackSuccess: 'ଲୋକାଲ୍ ଷ୍ଟୋରେଜ୍‌ରେ ସଫଳତାର ସହ ସଂରକ୍ଷିତ ହେଲା',
+  },
+} as const;
+
+export function getTranslation(lang: SupportedLanguage | null | undefined) {
+  if (!lang) return translations.en;
+  return translations[lang] || translations.en;
+}
